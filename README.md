@@ -3,7 +3,7 @@
 
 ## 📌 프로젝트 개요
 
-이 프로젝트는 **Jetson Nano 기반 자율주행 AGV(무인운반차)**와 **PySide2 기반 원격 GUI 관리자**가 연동되어, 다음과 같은 복합 기능을 수행합니다:
+이 프로젝트는 **Jetson Nano 기반 자율주행 AGV(무인운반차)** 와 **PySide2 기반 원격 GUI 관리자**가 연동되어, 다음과 같은 복합 기능을 수행합니다:
 
 * 🌟 **자율주행 제어** (ResNet18 기반 딥러닝 모델 사용)
 * 🌡️ **센서 정보 실시간 수집** (온도, 속도, 거리)
@@ -47,7 +47,7 @@ Jetson Nano (AGV)
 
 ## 💡 주요 기능
 
-### 📍 Jetson Nano (`agv_running.py`)
+### 📍 Jetson Nano (`agv_controller.py`)
 
 * **자율주행**: ResNet18 기반 이미지 입력 → xy steering 예측
 * **색상 인식**: HSV 커널 검색 (red, blue, purple, yellow, orange)
@@ -57,7 +57,7 @@ Jetson Nano (AGV)
 * **MQTT 메시지 subscribe**: 가지고 버튼 통해 반응
 * **Jupyter UI**: 사용자 연동 컨트롤 (슬라이더 + 영상)
 
-### 🖥️ 관리자 GUI (`manager_gui.py`)
+### 🖥️ 관리자 GUI (`agv_dashboard.py`)
 
 * **PySide2 기반 GUI**: Firestore 로그 뷰 + 센서 상태 실시간 표시
 * **제어 버튼**: go, stop, back, left, right 등 MQTT 명령 전송
