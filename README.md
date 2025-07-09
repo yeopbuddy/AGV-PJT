@@ -130,7 +130,7 @@ Jetson Nano (AGV)
 | AGV 제어 UI                      |
 | ------------------------------ |
 | ![AGV UI1](./assets/GUI1.png) |
-| ![AGV UI2](./assets/GUI2.png) |
+| ![AGV UI2](./assets/GUI2.jpg) |
 
 | 구동부 - 긴급 제동                |
 | ------------------------------ |
